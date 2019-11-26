@@ -4,7 +4,6 @@ import styled from "styled-components";
 import ceo1 from "../../assets/images/ceo_state1.png";
 import leander from "../../assets/images/leander.jpg";
 import maurice from "../../assets/images/maurice.jpg";
-import AuthContext from "../../AuthContext";
 
 const Styles = styled.div`
   h1{
