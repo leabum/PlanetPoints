@@ -10,7 +10,6 @@ import {
   Image
 } from "react-bootstrap";
 import styled from "styled-components";
-import contactImg from "../../assets/images/contact_bg.png";
 
 export const Impressum = () => {
   return (
