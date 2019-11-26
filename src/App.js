@@ -18,11 +18,9 @@ function App() {
 
   return (
     <React.Fragment>
-      <Router>
         <AuthProvider>
           <NavigationBar />
           <Jumbotron />
-
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
@@ -31,7 +29,6 @@ function App() {
             <Route exact component={NoMatch} />
           </Switch>
         </AuthProvider>
-      </Router>
     </React.Fragment>
   );
 }
