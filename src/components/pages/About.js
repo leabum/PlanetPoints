@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Card, Container, Row, Button, Col, Image } from "react-bootstrap";
 import styled from "styled-components";
 import ceo1 from "../../assets/images/ceo_state1.png";
-import leander from "../../assets/images/leander.jpg";
-import maurice from "../../assets/images/maurice.jpg";
+import leander from "../../assets/images/leander2.jpg";
+import maurice from "../../assets/images/maurice2.jpg";
 
 const Styles = styled.div`
   h1{
@@ -67,8 +67,9 @@ export const About = () => {
               <h1>Wer wir sind</h1>
             </Row>
             <Row className="justify-content-center">
-              <Col xs lg="3">
+              <Col xs="10" lg="3">
                 <Image
+                  fluid
                   src={src}
                   style={{
                     width: "400px",
@@ -96,8 +97,9 @@ export const About = () => {
               <h1></h1>
             </Row>
             <Row className="justify-content-center">
-              <Col xs lg="3">
+              <Col xs="10" lg="3">
                 <Image
+                  fluid
                   src={src2}
                   style={{
                     width: "400px",

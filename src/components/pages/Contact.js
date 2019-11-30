@@ -11,6 +11,7 @@ import {
 } from "react-bootstrap";
 import styled from "styled-components";
 import contactImg from "../../assets/images/contact_bg3.png";
+import MediaQuery from "react-responsive";
 
 const Styles = styled.div`
   h1{
@@ -66,8 +67,16 @@ const Styles = styled.div`
 
 h2 { 
   position: absolute; 
-  top: 48px; 
-  left: 60px; 
+  top: 36px; 
+  left: 32px; 
+  width: 100%; 
+}
+
+.h4-special { 
+  color: white
+  position: absolute; 
+  top: 30px; 
+  left: 22px; 
   width: 100%; 
 }
 
@@ -78,7 +87,7 @@ export const Contact = () => {
     <Styles>
       <React.Fragment>
         <Row className="justify-content-center">
-          <h1>Kontakt bei Geschäftsanfragen</h1>
+          <h1>Kontakt bei Geschäfts&shy;anfragen</h1>
         </Row>
         <Row className="justify-content-center">
           <Col xs lg="3">
@@ -88,10 +97,16 @@ export const Contact = () => {
               eine mögliche Kooperation? Melde dich gerne bei uns.
             </h4>
           </Col>
-          <Col xs lg="3">
+          <Col xs="10" lg="3">
             <div class="image">
-              <Image src={contactImg} width={"500px"} alt="" />
-              <h2>partner@planetpoints.de</h2>
+              <MediaQuery query="(min-width: 1024px)">
+                <Image src={contactImg} width={"400px"} alt="" />
+                <h2>partner@planetpoints.de</h2>
+              </MediaQuery>
+              <MediaQuery query="(max-width: 1024px)">
+                <Image src={contactImg} width={"300px"} alt="" />
+                <h4 className="h4-special">partner@planetpoints.de</h4>
+              </MediaQuery>
             </div>
           </Col>
         </Row>
@@ -105,10 +120,16 @@ export const Contact = () => {
               verbessern können? Wir freuen uns von dir zu hören!
             </h4>
           </Col>
-          <Col xs lg="3">
+          <Col xs="10" lg="3">
             <div class="image">
-              <Image src={contactImg} width={"500px"} alt="" />
-              <h2>kontakt@planetpoints.de</h2>
+              <MediaQuery query="(min-width: 1024px)">
+                <Image src={contactImg} width={"400px"} alt="" />
+                <h2>kontakt@planetpoints.de</h2>
+              </MediaQuery>
+              <MediaQuery query="(max-width: 1024px)">
+                <Image src={contactImg} width={"300px"} alt="" />
+                <h4 className="h4-special">kontakt@planetpoints.de</h4>
+              </MediaQuery>
             </div>
           </Col>
         </Row>

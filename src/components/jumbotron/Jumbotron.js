@@ -3,7 +3,7 @@ import { Jumbotron as Jumbo, Container, Image, Row } from "react-bootstrap";
 import styled from "styled-components";
 import apple from "../../assets/images/apple-logo.png";
 import android from "../../assets/images/android-logo.png";
-import bg from "../../assets/images/background.jpg";
+import bg from "../../assets/images/background2.jpg";
 
 const Styles = styled.div`
   .jumbo {

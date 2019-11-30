@@ -9,9 +9,9 @@ import {
   Form
 } from "react-bootstrap";
 import styled from "styled-components";
-import baby from "../../assets/images/baby.jpg";
-import handy from "../../assets/images/handy2.jpg";
-import bottle from "../../assets/images/bottle2.jpg";
+import baby from "../../assets/images/baby2.jpg";
+import handy from "../../assets/images/handy3.jpg";
+import bottle from "../../assets/images/bottle3.jpg";
 
 const Styles = styled.div`
   h1{
