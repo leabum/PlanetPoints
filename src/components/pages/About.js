@@ -64,7 +64,7 @@ export const About = () => {
 
   return (
     <Styles>
-      
+      <DynamicScrollTop />
       <React.Fragment>
         <Row className="justify-content-center" style={{ paddingTop: 0 }}>
           <div>
@@ -76,8 +76,6 @@ export const About = () => {
                 <Image
                   fluid
                   src={src}
-                  onMouseOver={() => onMouseOver()}
-                  onMouseLeave={() => onMouseLeave()}
                   style={{
                     width: "400px",
                     display: "block",
@@ -108,8 +106,6 @@ export const About = () => {
                 <Image
                   fluid
                   src={src2}
-                  onMouseOver={() => onMouseOver2()}
-                  onMouseLeave={() => onMouseLeave2()}
                   style={{
                     width: "400px",
                     display: "block",
