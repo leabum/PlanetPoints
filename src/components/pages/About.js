@@ -64,7 +64,7 @@ export const About = () => {
 
   return (
     <Styles>
-      <DynamicScrollTop />
+      
       <React.Fragment>
         <Row className="justify-content-center" style={{ paddingTop: 0 }}>
           <div>
